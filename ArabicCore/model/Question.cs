@@ -1,33 +1,44 @@
-﻿namespace ArabicCore.model
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ArabicCore.model
 {
-   
+    [Table("Question")]
     public class Question
     {
         public Question()
         {
         }
 
-        public Question(int id, string chapter, string rewrite, WordType wordType, string dutch, string arabic, string nativeWriting, byte[] picture, Status status)
+        public Question(int questionId, string chapter,  WordType wordType, string firstLanguageItem, string foreignLanguageItem, string nativeWriting, byte[] picture, Status status)
         {
-            Id = id;
+            QuestionID = questionId;
             Chapter = chapter;
-            Rewrite = rewrite;
+          
             WordType = wordType;
-            Dutch = dutch;
-            Arabic = arabic;
+            FirstLanguageItem = firstLanguageItem;
+            ForeignLanguageItem = foreignLanguageItem;
             NativeWriting = nativeWriting;
             Picture = picture;
             Status = status;
         }
+        [Key]
+        public int QuestionID { get; set; }
 
-        public int Id { get; set; }
         public string Chapter { get; set; }
-        public string Rewrite { get; set; }
+        [MaxLength(150)]
+        [Required]
         public WordType WordType { get; set; }
-        public string Dutch { get; set; }
-        public string Arabic { get; set; }
+        [MaxLength(150)]
+        [Required]
+        public string FirstLanguageItem { get; set; }
+        [MaxLength(150)]
+        [Required]
+        public string ForeignLanguageItem { get; set; }
+        [MaxLength(150)]
         public string NativeWriting { get; set; }
-        public byte[] Picture { get; set; }
+        public Byte[] Picture { get; set; }
         public Status Status { get; set; }
 
 
@@ -36,7 +47,7 @@
 
         protected bool Equals(Question other)
         {
-            return Id == other.Id;
+            return QuestionID == other.QuestionID;
         }
 
         public override bool Equals(object obj)
@@ -49,7 +60,7 @@
 
         public override int GetHashCode()
         {
-            return Id;
+            return QuestionID;
         }
 
         public static bool operator ==(Question left, Question right)
@@ -62,9 +73,20 @@
             return !Equals(left, right);
         }
 
+
+        public bool CompareAnswerFirstLanguage(string first)
+        {
+            return first.Equals(FirstLanguageItem);
+        }
+
+        public bool CompareAnswerForeignLanguage(string foreign)
+        {
+            return ForeignLanguageItem.Equals(foreign);
+        }
+
         public override string ToString()
         {
-            return $"{nameof(Id)}: {Id}, {nameof(Chapter)}: {Chapter}, {nameof(Rewrite)}: {Rewrite}, {nameof(WordType)}: {WordType}, {nameof(Dutch)}: {Dutch}, {nameof(Arabic)}: {Arabic}, {nameof(NativeWriting)}: {NativeWriting}, {nameof(Picture)}: {Picture}, {nameof(Status)}: {Status}";
+            return $"{nameof(QuestionID)}: {QuestionID}, {nameof(Chapter)}: {Chapter},  {nameof(WordType)}: {WordType}, {nameof(FirstLanguageItem)}: {FirstLanguageItem}, {nameof(ForeignLanguageItem)}: {ForeignLanguageItem}, {nameof(NativeWriting)}: {NativeWriting}, {nameof(Picture)}: {Picture}, {nameof(Status)}: {Status}";
         }
     }
 }

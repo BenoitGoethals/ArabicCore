@@ -56,7 +56,7 @@
         End Sub 'RunTransaction
       </code>
       <code lang="C#">
-        public void RunTransaction(string myConnString)
+        public voquestionId RunTransaction(string myConnString)
         {
         MySqlConnection myConnection = new MySqlConnection(myConnString);
         myConnection.Open();
@@ -142,9 +142,9 @@
         myCommand.Transaction = myTrans
 
         Try
-        myCommand.CommandText = "Insert into mytable (id, desc) VALUES (100, 'Description')"
+        myCommand.CommandText = "Insert into mytable (questionId, desc) VALUES (100, 'Description')"
         myCommand.ExecuteNonQuery()
-        myCommand.CommandText = "Insert into mytable (id, desc) VALUES (101, 'Description')"
+        myCommand.CommandText = "Insert into mytable (questionId, desc) VALUES (101, 'Description')"
         myCommand.ExecuteNonQuery()
         myTrans.Commit()
         Console.WriteLine("Success.")
@@ -167,7 +167,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void RunSqlTransaction(string myConnString)
+        public voquestionId RunSqlTransaction(string myConnString)
         {
         MySqlConnection myConnection = new MySqlConnection(myConnString);
         myConnection.Open();
@@ -184,9 +184,9 @@
 
         try
         {
-        myCommand.CommandText = "Insert into mytable (id, desc) VALUES (100, 'Description')";
+        myCommand.CommandText = "Insert into mytable (questionId, desc) VALUES (100, 'Description')";
         myCommand.ExecuteNonQuery();
-        myCommand.CommandText = "Insert into mytable (id, desc) VALUES (101, 'Description')";
+        myCommand.CommandText = "Insert into mytable (questionId, desc) VALUES (101, 'Description')";
         myCommand.ExecuteNonQuery();
         myTrans.Commit();
         Console.WriteLine("Both records are written to database.");
@@ -249,9 +249,9 @@
         myCommand.Transaction = myTrans
 
         Try
-        myCommand.CommandText = "Insert into mytable (id, desc) VALUES (100, 'Description')"
+        myCommand.CommandText = "Insert into mytable (questionId, desc) VALUES (100, 'Description')"
         myCommand.ExecuteNonQuery()
-        myCommand.CommandText = "Insert into mytable (id, desc) VALUES (101, 'Description')"
+        myCommand.CommandText = "Insert into mytable (questionId, desc) VALUES (101, 'Description')"
         myCommand.ExecuteNonQuery()
         myTrans.Commit()
         Console.WriteLine("Success.")
@@ -274,7 +274,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void RunSqlTransaction(string myConnString)
+        public voquestionId RunSqlTransaction(string myConnString)
         {
         MySqlConnection myConnection = new MySqlConnection(myConnString);
         myConnection.Open();
@@ -291,9 +291,9 @@
 
         try
         {
-        myCommand.CommandText = "Insert into mytable (id, desc) VALUES (100, 'Description')";
+        myCommand.CommandText = "Insert into mytable (questionId, desc) VALUES (100, 'Description')";
         myCommand.ExecuteNonQuery();
-        myCommand.CommandText = "Insert into mytable (id, desc) VALUES (101, 'Description')";
+        myCommand.CommandText = "Insert into mytable (questionId, desc) VALUES (101, 'Description')";
         myCommand.ExecuteNonQuery();
         myTrans.Commit();
         Console.WriteLine("Both records are written to database.");

@@ -1,0 +1,348 @@
+1;gas;ghaaz;???;substantief;H0;
+2;aardappelen;baTaaTaa;???????;substantief;H0;
+3;sofa;Soefa;????;substantief;H0;
+4;algebra;el-djibr;?????;substantief;H0;
+5;gitaar;ghietaar;?????;substantief;H0;
+6;giraf;zaraafa;????????;substantief;H0;
+7;suiker;sukkar;??????;substantief;H1;
+8;televisie;talfizyoen;???????;substantief;H0;
+9;shampo;sjaamboe;?????;substantief;H0;
+10;spinazie;sabaanikh;???????;substantief;H0;
+11;katoen;quTn;?????;substantief;H0;
+12;olie (industrieel);nafT;???;substantief;H0;
+13;radio;raadiyoe;?????;substantief;H0;
+14;koffie;qahwa;???????;substantief;H1;
+15;limoen / citroen;laymoen;????????;substantief;H1;schrijf
+16;woestijn;SaHraa';?????;substantief;ok;
+17;alcohol;El-kuHoel;??????;substantief;ok;
+18;gazelle;ghazaala;????;substantief;H0;
+19;papegaai;babaghaa’;?????;substantief;H0;
+20;zeep;Saboen;?????;substantief;ok;
+21;luister !;istami3 !;????????;uitdrukking;H1;
+22;lees !;iqra' !;?????;uitdrukking;H1;
+23;schrijf !;uktub !;???????;uitdrukking;H1;
+24;open !;iftaH !;???;uitdrukking;H1;
+25;zwijg !;uskut !;??;uitdrukking;H1;
+26;ga zitten !;idjlis !;??;uitdrukking;H1;
+27;excuseer ---;law samaHt(i);?????;uitdrukking;H1;
+28;ik heb een vraag;3indie su'aal;???? ????;uitdrukking;H1;
+29;wat betekent --- ?;maa ma3naa --- ?;????;uitdrukking;H1;
+30;Hoe schrijven we --- ?;kayfa naktub --- ?;??? ????;uitdrukking;H1;
+31;ik begrijp het niet;laa afham;?? ????;uitdrukking;H1;
+32;ik weet het niet;laa a3rif;?? ????;uitdrukking;H1;
+33;boek;kitaab;??????;substantief;H1;
+34;pagina / bladzijde;SafHa;???????;substantief;ok;
+35;pen;qalam;?????;substantief;ok;
+36;bord;sabboera;?????????;substantief;ok;
+37;stoel;kursie;????????;substantief;ok;
+38;raam;sjubbaak;?????;substantief;ok;
+39;deur;baab;???;substantief;ok;
+40;pauze;istiraaHa;????? ????;substantief;ok;
+41;gesprek / dialoog;Hiwaar;????????;substantief;ok;
+42;oefening / oefeningen;tamrien / tamaarien;;substantief;ok;
+43;ja;na3am;???;substantief;ok;
+44;nee;laa;??;substantief;ok;
+45;aangenaam / ik ben vereerd;tasjarrafnaa / furSa sa3ieda;;uitdrukking;H1;
+46;bakker;khabbaaz;;substantief;H1;
+47;meisjes / dochters;banaat;;substantief;H1;
+48;liefje / schatje / geliefde (v);Habieba;;substantief;H1;
+49;liefje / schatje / geliefde (m);Habieb;;substantief;H1;
+50;thee;sjaay;????;substantief;H1;schrijf
+51;melk;Halieb;??????;substantief;H1;
+52;olijf;zaytoen;??????????;substantief;H1;
+53;tafel;Taawila;;substantief;ok;
+54;sleutel;miftaaH;;substantief;H1;
+55;markt;soeq;????;substantief;H1;
+56;huis;bayt / daar;????? ;substantief;H1;
+57;stad;madiena;?????????;substantief;H1;
+58;badkamer;Hammaam;???????;substantief;H1;
+59;boter;zubda;;substantief;H1;
+60;olie;zayt;?????;substantief;H1;
+61;boeken;kutub;;substantief;H1;
+62;liefde;Hubb;;substantief;H1;
+63;vader;ab;;substantief;H1;
+64;moeder / mama;umm / maamaa;????;substantief;H1;schrijf
+65;meisje / dochter;bint;;substantief;H1;
+66;jongen / zoon / kind;walad;;substantief;H1;
+67;vis / één vis;samak / samaka;??????;substantief;H1;
+68;groenten;khuDar;;substantief;H1;
+69;brood / één brood;khubz / khubza;?????;substantief;H1;
+70;vlees;laHm;?????;substantief;H1;
+71;zin;djumla;;substantief;ok;
+72;woord;kalima;???????;substantief;ok;
+73;bureau / kantoor;maktab;;substantief;H1;
+74;moskee;masdjid;???????;substantief;H1;
+75;imam;imaam;;substantief;H1;schrijf
+76;broer;akh;??? ;substantief;H1;schrijf
+77;zus;ukht;;substantief;H1;
+78;islam;islaam;;substantief;H1;schrijf
+79;les;dars;;substantief;H1;
+80;leraar;mudarris;;substantief;H1;
+81;wat is --- ?;ma hadaa --- ?;;substantief;ok;
+82;restaurant;maT3am;???????;substantief;H1;
+83;rechts;yamien;????;substantief;H1;schrijf
+84;ziek (v);marieDa;;adjectief;H1;
+85;verpleegster;mumarriDa;;substantief;H1;
+86;school;madrasa;;substantief;H1;
+87;een vrouw / de vrouw;imra'a / el-mar'a;;substantief;H1;schrijf
+88;valies / koffer;Haqieba;????????;substantief;ok;
+89;lerares;mudarrisa;;substantief;H1;
+90;bibliotheek / boekhandel;maktaba;?????????;substantief;H1;
+91;kopje / koffietas;findjaan;????????;substantief;H1;
+92;zon;sjams;???;substantief;H1;schrijf
+93;mes;sikkien;;substantief;H1;
+94;links;yasaar;?????? ;substantief;H1;schrijf
+95;mensen;naas;???;substantief;ok;schrijf
+96;brief / SMS;risaala;????????;substantief;H1;schrijf
+97;vuil;wasikh;???;adjectief;H1;schrijf
+98;auto;sayyaara;?????????;substantief;H1;schrijf
+99;gras;Hasjiesj;;substantief;H1;
+100;boom;sjadjara;???????;substantief;H1;
+101;douche;dusj;;substantief;H1;
+102;straat;sjaari3;?????? ;substantief;H1;
+103;ziekenhuis;mustasjfaa;???????????;substantief;H1;
+104;abrikoos;misjmisj;????;substantief;H1;schrijf
+105;winter;sjitaa';;substantief;H1;
+106;soep;sjurba;???????;substantief;H1;
+107;jongeren / jeugd;sjabaab;;substantief;H1;
+108;vraag;su'aal;??????;substantief;H1;schrijf
+109;dag;yawm;???;substantief;H1;schrijf
+110;voor (plaats);amaama;?????;substantief;H1;schrijf
+111;welk;ayy(a);;adjectief;H1;schrijf
+112;ooh (aanspreking);yaa;??;functiewoorden;H1;schrijf
+113;of;aw;;functiewoorden;H1;schrijf
+114;en;wa;??;functiewoorden;H1;schrijf
+115;gisteren;ams;;substantief;H1;schrijf
+116;naam;ism;;substantief;H1;schrijf
+117;mijn naam is ---;ismie ---;???????;uitdrukking;H1;schrijf
+118;Sesam;simsim;????;substantief;H1;schrijf
+119;waterpijp;sjiesja;????;substantief;ok;schrijf
+120;parasol;sjamsiyya;;substantief;ok;schrijf
+121;zonnig;musjmis;;adjectief;H1;schrijf
+122;hoofd;ra's;;substantief;H1;schrijf
+123;president;ra'ies;;substantief;H1;
+124;water;maa';????;substantief;H1;schrijf
+125;avond;masaa';;substantief;H1;schrijf
+126;namen;asmaa';;substantief;ok;schrijf
+127;mijn moeder ;ummie;;substantief;ok;schrijf
+128;avondlijk (v);masaaiyy;;adjectief;H1;schrijf
+129;de / het;el / al;;functiewoorden;H1;schrijf
+130;veiligheid / welzijn / bescherming;salaama;???????;substantief;H1;schrijf
+131;islamitisch;islaamiyy;;adjectief;H1;schrijf
+132;moslim;muslim;;substantief;H1;schrijf
+133; noorden;sjamaal;;substantief;H1;schrijf
+134;nacht;layla;;substantief;H1;schrijf
+135;man;radjul;;substantief;H1;
+136;sinaasappel;burtuqaal;?????????;substantief;H1;
+137;eerst;awwal / oelaa;?????? ;adjectief;H1;schrijf
+138;vrede;salaam;?????;substantief;H1;schrijf
+139;noordelijk;sjamaaliyy;;adjectief;H1;schrijf
+140;goede (het);el-khayr;;substantief;H1;schrijf
+141;oom (aan moederskant);khaal;;substantief;H1;schrijf
+142;perzik;khoekh;???????;substantief;H1;schrijf
+143;mijn broer;akhie;;substantief;ok;schrijf
+144;tante (aan moederskant);khaala;;substantief;H1;schrijf
+145;oude wijze man;sjaykh;;substantief;H1;schrijf
+146;wijn / alcoholische drank;khamr;;substantief;H1;schrijf
+147;broer & zus;akh wa ukht;;substantief;ok;
+148;kast ;khizaana;;substantief;H1;
+149;tent;khayma;;substantief;H1;schrijf
+150;keuken;maTbakh;???????;substantief;H1;
+151;schaap;kharoef;;substantief;H1;
+152;bakkerij;makhbazza;??????? ;substantief;H1;
+153;koranhoofdstuk / vers;soera;;substantief;H1;schrijf
+154;Syrië;soeriyaa;???????;substantief;H1;schrijf
+155;tekening;rasm;;substantief;H1;schrijf
+156;boodschapper / gezant / profeet;rasoel;??????;substantief;H1;schrijf
+157;familie / gezin;usra;;substantief;H1;schrijf
+158;keer;marra;;substantief;H1;schrijf
+159;wij;naHnu;;persoonlijk voornaamwoord;H1;
+160;vrouwen;nisaa';;substantief;H1;schrijf
+161;mens;insaan;;substantief;H1;schrijf
+162;uit;min;????;functiewoorden;H1;schrijf
+163;ik;anaa;;persoonlijk voornaamwoord;H1;schrijf
+164;tussen;bayna;??????;functiewoorden;H1;
+165;minaret;manaara;;substantief;H1;schrijf
+166;Yemen;el-yaman;;substantief;H1;schrijf
+167;nul;Sifr;;telwoord;H1;
+168;één;waaHid;??????;telwoord;H1;
+169;twee;ithnayn;????????;telwoord;H1;
+170;drie;thalaatha;??????;telwoord;H1;
+171;vier;arba3a;????????;telwoord;H1;
+172;vijf;khamsa;?????;telwoord;H1;schrijf
+173;zes;sitta;??????;telwoord;H1;
+174;zeven;sab3a;??????;telwoord;H1;
+175;acht;thamaaniya;??????????;telwoord;H1;
+176;negen;tis3a;?????? ;telwoord;H1;
+177;tien;3asjara;??????;telwoord;H1;
+178;Bahrein;el-baHrayn;;substantief;H1;
+179;België;baldjiekaa;;substantief;H1;
+180;Marokko;el-maghrib;;substantief;H1;
+181;Griekenland;el-yoenaan;;substantief;H1;
+182;Jordanië;el-urdun;?????????;substantief;H1;
+183;Koeweit;el-kuwayt;??????????;substantief;H1;
+184;Oman;3umaan;;substantief;H1;
+185;buurvrouw;djaara;;substantief;H1;
+186;letter;Harf;;substantief;H1;
+187;(de) Nijl;el-niel;;substantief;H1;schrijf
+188;nummer / nummers;raqm / arqaam;?????;substantief;H1;??????? 
+189;pyjama;manaama;;substantief;H1;schrijf
+190;roos;warda;;substantief;H1;
+191;telefoon;haatif / tiliefoen;;substantief;H1;
+192;telefoonnummer;raqm haatif / raqm tiliefoen;;substantief;H1;
+193;vandaag;el-yawm;;substantief;H1;
+194;warm;saakhin;;adjectief;H1;
+195;wie;man;;functiewoorden;H1;schrijf
+196;met;ma3a;????;functiewoorden;H1;
+197;vanwaar;min ayna;;functiewoorden;H1;schrijf
+198;waar;ayna;;functiewoorden;H1;schrijf
+199;wat;maa / maadha;;functiewoorden;H1;schrijf
+200;betekenis;ma3naa;;substantief;H1;
+201;hoeveel (prijs);bikam;;functiewoorden;H2;
+202;ik woon op het platteland;(anaa) askun fie l-rief;;uitdrukking;H2;
+203;hoe;kayfa;???????;functiewoorden;ok;
+204;zij is in de kerk;huwa fie kaniesa;;uitdrukking;H2;
+205;ingenieur;muhandis;;substantief;H2;
+206;maansikkel;hilaal;;substantief;H2;
+207;wat is haar naam?;maa ismuhaa?;;uitdrukking;H2;
+208;wat is zijn naam?;maa ismuhu?;;uitdrukking;H2;
+209;pyramide;haram;;substantief;H2;
+210;maand;sjahr;;substantief;H2;
+211;zijn naam is ---;ismuhu ---;;uitdrukking;H2;
+212;haar naam is ---;ismuhaa ---;;uitdrukking;H2;
+213;rivier;nahr;;substantief;H2;
+214;stuk fruit;faakiha;;substantief;H2;
+215;pyramides;ahraam;;substantief;H2;
+216;gemakkelijk;sahl;;adjectief;H2;
+217;daar / er;hunaaka;;adjectief;H2;
+218;hier;hunaa;;adjectief;H2;
+219;beroep;mihna;;substantief;H2;
+220;zij (m. mv);hum;;persoonlijk voornaamwoord;H2;
+221;belangrijk;muhim;;adjectief;H2;
+222;zijn vader;aboehu;;substantief;H2;
+223;over(dag);nahaar;;substantief;H2;
+224;Laten we naar het café gaan;yallah namsjie ilaa l-maqhaa;;uitdrukking;H2;
+225;uitstekend;mumtaaza;;uitdrukking;H2;
+226;café;l-maqhaa;;substantief;H2;
+227;gaan;namsjie;;uitdrukking;H2;
+228;naar;ilaa;;functiewoorden;ok;
+229;hoe gaat het ?;kayfa l-Haal ?;;uitdrukking;H2;
+230;lamp;misbaaH;;substantief;H2;
+231;winkel;Hanoet;;substantief;H2;
+232;station;maHaTTa;;substantief;H2;
+233;park / tuin;Hadieqa;;substantief;H2;
+234;lelijk;qabieH;;adjectief;H2;
+235;Mag ik ?? / Sta mij toe … / Excuseer …;ismaH lie;;uitdrukking;H2;
+236;jij / je / u (m);inta;;persoonlijk voornaamwoord;H1;
+237;hij;huwa;;persoonlijk voornaamwoord;H2;
+238;einde;nihaaya;;substantief;H2;
+239;kikkererwten;Hummus;;substantief;H2;
+240;zee;baHr;;substantief;H2;
+241;toegestaan;Halaal;;adjectief;H2;
+242;zij / ze (enk);hiya;;persoonlijk voornaamwoord;H2;
+243;verboden;Haraam;;adjectief;H2;
+244;mooi (v);Halwa;;adjectief;H2;
+245;mooi (m);Halw;;adjectief;H2;
+246;dag (afscheid);ma3a s-salaama;;uitdrukking;H1;
+247;Ik ben ---;anaa ---;;uitdrukking;H1;
+248;in;fie;???;functiewoorden;H1;
+249;zwanger;Haamil;;adjectief;H2;
+250;vrolijk;farHaan;;adjectief;H2;
+251;Christen;masieHiyy;;substantief;H2;
+252;boer;fallaaH;;substantief;H2;
+253;reisje, tocht;riHla;;substantief;H2;
+254;duif;Hamaam;;substantief;H2;
+255;ziel;roeH;;substantief;H2;
+256;Belg(isch);baldjiekiyy;;adjectief;H1;
+257;Levantijns;sjamaaiyy;;adjectief;H1;schrijf
+258;jij / je / u (v);inti;;persoonlijk voornaamwoord;H1;
+259;wat is je naam ? (v);maa ismik ?;;uitdrukking;H1;
+260;goeie avond;masaa' el-khayr;;uitdrukking;H1;
+261;goeie avond (terug);masaa' en-noer;;uitdrukking;H1;
+262;goeiemorgen;SabaaH el-khayr;;uitdrukking;H1;
+263;goeiemorgen (terug);SabaaH en-noer;;uitdrukking;H1;
+264;hallo, vrede zij met u;es-salaam 3alaykum;;uitdrukking;H1;
+265;hallo, welkom;marHaban, ahlan;;uitdrukking;H1;
+266;heb je het gesprek begrepen ?;hal fahimt el-Hiwaar ?;;uitdrukking;H1;
+267;vanwaar ben je ? (v);min ayna inti ?;;uitdrukking;H1;
+268;ik kom uit ---;anaa min ---;;uitdrukking;H1;
+269;ik ben op school en ik zie;anaa fie l-madrasa w asjoef;;uitdrukking;H1;
+270;Tot ziens / tot de volgende keer;'ilaa-l-liqaa;;uitdrukking;H1;
+271;vanwaar ben je ? (m);min ayna inta ?;;uitdrukking;H1;
+272;wat is je naam ? (m);maa ismak ?;;uitdrukking;H1;
+273;wat zie je ?;maadhaa tasjoef ?;;uitdrukking;H1;
+274;wie ben je ? (m);man inta ?;;uitdrukking;H1;
+275;bioscoop / cinema;sienamaa;;substantief;H1;
+276;gewoonte (volgens Islamitisch gebruik);sunna;;substantief;H1;schrijf
+277;jaar;sana;;substantief;H1;
+278;licht;noer;????;substantief;H1;schrijf
+279;verpleger;mumarriD;;substantief;H1;
+280;vuur;naar;;substantief;H1;schrijf
+281;inleiding op ja/nee vraag;hal;;functiewoorden;H1;
+282;Marokkaan(s);maghribiyy;;adjectief;H1;
+283;goed;bikhayr;;uitdrukking;H1;schrijf
+284;hallo, vrede zij met u (terug);wa 3alaykum es-salaam;;uitdrukking;H1;
+285;wie ben je ? (v);man inti ?;;uitdrukking;H1;
+286;ziek (m);marieD;???????;adjectief;H1;
+287;moslima;muslima;;substantief;H1;
+288;moslims;muslimoen;;substantief;H1;
+289;buur;djaar;????;substantief;H1;
+290;appel;tuffaaH;;substantief;H2;
+291;ga weg !;ruH !;;uitdrukking;H2;
+292;ezel;Himaar;;substantief;H2;
+293;hoeveel (aantal);kam;;adjectief;H2;
+294;Hoe gaat het ? (terug);kayfa Haalak;??? ??????;uitdrukking;H2;
+295;godzijdank / wij danken God;el-Hamdulillah;;uitdrukking;H2;
+296;hallo, welkom (hetzelfde);ahlan wa sahlan;;uitdrukking;H2;
+297;hallo (terug);ahlan bik;;uitdrukking;H2;
+298;Hoe gaat het ? (v);kayfa Haalik;;uitdrukking;H2;
+299;God zegt goed;el-Hamdu lillah bikhayr;;uitdrukking;H2;
+300;koning;malik;;substantief;H2;
+301;Wat is jouw telefoonnummer? (m);maa raqm haatifak / tiliefoenak ?;;uitdrukking;H1;
+302;Wat is jouw telefoonnummer? (v);maa raqm haatifik / tiliefoenik ?;;uitdrukking;H1;
+303;mijn telefoonnummer is ---;raqm haatifie / tiliefoenie ---;;uitdrukking;H1;
+304;zondag;el-aHad;;substantief;H1;
+305;maandag;el-ithnayn;;substantief;H1;
+306;dinsdag;eth-thulaathaa';;substantief;H1;
+307;woensdag;el-arbbi3aa';;substantief;H1;
+308;donderdag;el-khamies;;substantief;H1;
+309;vrijdag;el-djumma3a;;substantief;H1;
+310;zaterdag;es-sabt;;substantief;H1;
+311;heel / elke;kull;????;adjectief;H2;
+312;kerk;kaniesa;;substantief;H2;
+313;koningin;malika;;substantief;H2;
+314;koninkrijk;mamlaka;;substantief;H2;
+315;maar;walakin;;functiewoorden;H2;
+316;dronken;sakraan;;adjectief;H2;
+317;ik woon;askun;;uitdrukking;H2;
+318;hij woont;yaskun;;uitdrukking;H2;
+319;wij wonen;naskun;;uitdrukking;H2;
+320;bedrijf;sjarikaa;;substantief;H2;
+321;het kan / het mag;mumkin;;uitdrukking;H2;
+322;volledig;kaamil;??????;adjectief;H2;
+323;proficiat;mabroek;;substantief;H2;
+324;kilo;kieloe;;substantief;H2;
+325;couscous;kuskus;;substantief;H2;
+326;ik ben elke dag dronken;anaa sakraana kull yawm;;uitdrukking;H2;
+327;mijn broer is heel de dag dronken;sakhie sakraan kull el-yawm;;uitdrukking;H2;
+328;museum;matHaf;???????;substantief;H2;
+329;boot / schip;safiena;????????;substantief;H2;
+330;Frankrijk;faransaa;????????;substantief;H2;
+331;Frans;faransiyy;????????????;adjectief;H2;
+332;idee;fikra;??????? ;substantief;H2;
+333;platteland;rief;;substantief;H2;
+334;reis;safar;?????;substantief;H2;
+335;ambassade;sifaara;;substantief;H2;
+336;ik ga op reis;usaafir;;uitdrukking;H2;
+337;wij gaan op reis;nusaafir;;uitdrukking;H2;
+338;herfst;kharief;;substantief;H2;
+339;licht (gewicht);khafief;??????;adjectief;H2;
+340;paprika / peper;filfil;;substantief;H2;
+341;heet;Haar;????;adjectief;H2;
+342;boontjes;foel;;substantief;H2;
+343;olifant;fiel;????;substantief;H2;
+344;fruit;fawaakih;;substantief;H2;
+345;hotel;funduq;???????;substantief;H2;
+346;zout;milH;?????;substantief;H2;
+347;groot;kabier;??????;adjectief;H2;
+348;dank u;sjukran;;uitdrukking;H2;

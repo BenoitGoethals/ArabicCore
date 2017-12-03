@@ -111,7 +111,7 @@
 
   <Open>
     <summary>Opens a database connection with the property settings specified by the ConnectionString.</summary>
-    <exception cref="InvalidOperationException">Cannot open a connection without specifying a data source or server.</exception>
+    <exception cref="InvalquestionIdOperationException">Cannot open a connection without specifying a data source or server.</exception>
     <exception cref="MySqlException">A connection-level error occurred while opening the connection.</exception>
     <remarks>
       <para>
@@ -133,7 +133,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlConnection(string myConnString)
+        public voquestionId CreateMySqlConnection(string myConnString)
         {
         MySqlConnection myConnection = new MySqlConnection(myConnString);
         myConnection.Open();
@@ -163,7 +163,7 @@
       <code lang="vbnet">
         Public Sub CreateMySqlConnection()
         Dim myConnString As String = _
-        "Persist Security Info=False;database=test;server=localhost;user id=joeuser;pwd=pass"
+        "Persist Security Info=False;database=test;server=localhost;user questionId=joeuser;pwd=pass"
         Dim myConnection As New MySqlConnection( myConnString )
         myConnection.Open()
         MessageBox.Show( "Server Version: " + myConnection.ServerVersion _
@@ -176,10 +176,10 @@
       </code>
 
       <code lang="C#">
-        public void CreateMySqlConnection()
+        public voquestionId CreateMySqlConnection()
         {
         string myConnString =
-        "Persist Security Info=False;database=test;server=localhost;user id=joeuser;pwd=pass";
+        "Persist Security Info=False;database=test;server=localhost;user questionId=joeuser;pwd=pass";
         MySqlConnection myConnection = new MySqlConnection( myConnString );
         myConnection.Open();
         MessageBox.Show( "Server Version: " + myConnection.ServerVersion
@@ -223,7 +223,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlConnection(string myConnString)
+        public voquestionId CreateMySqlConnection(string myConnString)
         {
         MySqlConnection myConnection = new MySqlConnection(myConnString);
         myConnection.Open();
@@ -238,7 +238,7 @@
   <ServerVersion>
     <summary>Gets a string containing the version of the MySQL server to which the client is connected.</summary>
     <returns>The version of the instance of MySQL.</returns>
-    <exception cref="InvalidOperationException">The connection is closed.</exception>
+    <exception cref="InvalquestionIdOperationException">The connection is closed.</exception>
     <example>
       The following example creates a <see cref="MySqlConnection"/>, opens it,
       displays some of its properties, then closes the connection.
@@ -253,7 +253,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlConnection(string myConnString)
+        public voquestionId CreateMySqlConnection(string myConnString)
         {
         MySqlConnection myConnection = new MySqlConnection(myConnString);
         myConnection.Open();
@@ -292,7 +292,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlConnection(string myConnString)
+        public voquestionId CreateMySqlConnection(string myConnString)
         {
         MySqlConnection myConnection = new MySqlConnection(myConnString);
         myConnection.Open();
@@ -316,7 +316,7 @@
   <BeginTransaction>
     <summary>Begins a database transaction.</summary>
     <returns>An object representing the new transaction.</returns>
-    <exception cref="InvalidOperationException">Parallel transactions are not supported.</exception>
+    <exception cref="InvalquestionIdOperationException">Parallel transactions are not supported.</exception>
     <remarks>
       <para>This command is equivalent to the MySQL BEGIN TRANSACTION command.</para>
       <para>
@@ -326,7 +326,7 @@
           If you do not specify an isolation level, the default isolation level is used. To specify an isolation
           level with the <see cref="BeginTransaction()"/> method, use the overload that takes the <I>iso</I> parameter.  Also
           note that any attempt to begin a transaction while a transaction is in progress will throw an exception on MySQL 4.1 and higher.
-          On MySQL 4.0, an exception will not be thrown because servers 4.0 and earlier did not report their transacation status.
+          On MySQL 4.0, an exception will not be thrown because servers 4.0 and earlier dquestionId not report their transacation status.
         </note>
       </para>
     </remarks>
@@ -350,9 +350,9 @@
         myCommand.Transaction = myTrans
 
         Try
-        myCommand.CommandText = "Insert into Test (id, desc) VALUES (100, 'Description')"
+        myCommand.CommandText = "Insert into Test (questionId, desc) VALUES (100, 'Description')"
         myCommand.ExecuteNonQuery()
-        myCommand.CommandText = "Insert into Test (id, desc) VALUES (101, 'Description')"
+        myCommand.CommandText = "Insert into Test (questionId, desc) VALUES (101, 'Description')"
         myCommand.ExecuteNonQuery()
         myTrans.Commit()
         Console.WriteLine("Both records are written to database.")
@@ -375,7 +375,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void RunTransaction(string myConnString)
+        public voquestionId RunTransaction(string myConnString)
         {
         MySqlConnection myConnection = new MySqlConnection(myConnString);
         myConnection.Open();
@@ -392,9 +392,9 @@
 
         try
         {
-        myCommand.CommandText = "insert into Test (id, desc) VALUES (100, 'Description')";
+        myCommand.CommandText = "insert into Test (questionId, desc) VALUES (100, 'Description')";
         myCommand.ExecuteNonQuery();
-        myCommand.CommandText = "insert into Test (id, desc) VALUES (101, 'Description')";
+        myCommand.CommandText = "insert into Test (questionId, desc) VALUES (101, 'Description')";
         myCommand.ExecuteNonQuery();
         myTrans.Commit();
         Console.WriteLine("Both records are written to database.");
@@ -431,7 +431,7 @@
     <summary>Begins a database transaction with the specified isolation level.</summary>
     <param name="iso">The isolation level under which the transaction should run. </param>
     <returns>An object representing the new transaction.</returns>
-    <exception cref="InvalidOperationException">Parallel exceptions are not supported.</exception>
+    <exception cref="InvalquestionIdOperationException">Parallel exceptions are not supported.</exception>
     <remarks>
       <para>This command is equivalent to the MySQL BEGIN TRANSACTION command.</para>
       <para>
@@ -441,7 +441,7 @@
           If you do not specify an isolation level, the default isolation level is used. To specify an isolation
           level with the <see cref="BeginTransaction()"/> method, use the overload that takes the <I>iso</I> parameter.
           Also note that any attempt to begin a transaction while a transaction is in progress will throw an exception on MySQL 4.1 and higher.
-          On MySQL 4.0, an exception will not be thrown because servers 4.0 and earlier did not report their transacation status.
+          On MySQL 4.0, an exception will not be thrown because servers 4.0 and earlier dquestionId not report their transacation status.
         </note>
       </para>
     </remarks>
@@ -465,9 +465,9 @@
         myCommand.Transaction = myTrans
 
         Try
-        myCommand.CommandText = "Insert into Test (id, desc) VALUES (100, 'Description')"
+        myCommand.CommandText = "Insert into Test (questionId, desc) VALUES (100, 'Description')"
         myCommand.ExecuteNonQuery()
-        myCommand.CommandText = "Insert into Test (id, desc) VALUES (101, 'Description')"
+        myCommand.CommandText = "Insert into Test (questionId, desc) VALUES (101, 'Description')"
         myCommand.ExecuteNonQuery()
         myTrans.Commit()
         Console.WriteLine("Both records are written to database.")
@@ -490,7 +490,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void RunTransaction(string myConnString)
+        public voquestionId RunTransaction(string myConnString)
         {
         MySqlConnection myConnection = new MySqlConnection(myConnString);
         myConnection.Open();
@@ -507,9 +507,9 @@
 
         try
         {
-        myCommand.CommandText = "insert into Test (id, desc) VALUES (100, 'Description')";
+        myCommand.CommandText = "insert into Test (questionId, desc) VALUES (100, 'Description')";
         myCommand.ExecuteNonQuery();
-        myCommand.CommandText = "insert into Test (id, desc) VALUES (101, 'Description')";
+        myCommand.CommandText = "insert into Test (questionId, desc) VALUES (101, 'Description')";
         myCommand.ExecuteNonQuery();
         myTrans.Commit();
         Console.WriteLine("Both records are written to database.");
@@ -547,7 +547,7 @@
     <param name="databaseName">The name of the database to use.</param>
     <remarks>
       <para>
-        The value supplied in the <I>database</I> parameter must be a valid database
+        The value supplied in the <I>database</I> parameter must be a valquestionId database
         name. The <I>database</I> parameter cannot contain a null value, an empty
         string, or a string with only blank characters.
       </para>
@@ -559,8 +559,8 @@
         executes before the user performs any operations.
       </para>
     </remarks>
-    <exception cref="ArgumentException">The database name is not valid.</exception>
-    <exception cref="InvalidOperationException">The connection is not open.</exception>
+    <exception cref="ArgumentException">The database name is not valquestionId.</exception>
+    <exception cref="InvalquestionIdOperationException">The connection is not open.</exception>
     <exception cref="MySqlException">Cannot change the database.</exception>
     <example>
       The following example creates a <see cref="MySqlConnection"/> and displays
@@ -569,7 +569,7 @@
       <code lang="vbnet">
         Public Sub CreateMySqlConnection()
         Dim myConnString As String = _
-        "Persist Security Info=False;database=test;server=localhost;user id=joeuser;pwd=pass"
+        "Persist Security Info=False;database=test;server=localhost;user questionId=joeuser;pwd=pass"
         Dim myConnection As New MySqlConnection( myConnString )
         myConnection.Open()
         MessageBox.Show( "Server Version: " + myConnection.ServerVersion _
@@ -582,10 +582,10 @@
       </code>
 
       <code lang="C#">
-        public void CreateMySqlConnection()
+        public voquestionId CreateMySqlConnection()
         {
         string myConnString =
-        "Persist Security Info=False;database=test;server=localhost;user id=joeuser;pwd=pass";
+        "Persist Security Info=False;database=test;server=localhost;user questionId=joeuser;pwd=pass";
         MySqlConnection myConnection = new MySqlConnection( myConnString );
         myConnection.Open();
         MessageBox.Show( "Server Version: " + myConnection.ServerVersion
@@ -625,7 +625,7 @@
         <para>
           The event handler receives an argument of type <see cref="System.Data.StateChangeEventArgs"/>
           containing data related to this event. The following <B>StateChangeEventArgs</B>
-          properties provide information specific to this event.
+          properties provquestionIde information specific to this event.
         </para>
         <list type="table">
           <listheader>
@@ -689,10 +689,10 @@
           Public Sub InsertRow(myConnectionString As String)
           ' If the connection string is null, use a default.
           If myConnectionString = "" Then
-          myConnectionString = "Database=Test;Data Source=localhost;User Id=username;Password=pass"
+          myConnectionString = "Database=Test;Data Source=localhost;User QuestionID=username;Password=pass"
           End If
           Dim myConnection As New MySqlConnection(myConnectionString)
-          Dim myInsertQuery As String = "INSERT INTO Orders (id, customerId, amount) Values(1001, 23, 30.66)"
+          Dim myInsertQuery As String = "INSERT INTO Orders (questionId, customerQuestionID, amount) Values(1001, 23, 30.66)"
           Dim myCommand As New MySqlCommand(myInsertQuery)
           myCommand.Connection = myConnection
           myConnection.Open()
@@ -703,15 +703,15 @@
       </code>
       <code lang="C#">
         <c>
-          public void InsertRow(string myConnectionString)
+          public voquestionId InsertRow(string myConnectionString)
           {
           // If the connection string is null, use a default.
           if(myConnectionString == "")
           {
-          myConnectionString = "Database=Test;Data Source=localhost;User Id=username;Password=pass";
+          myConnectionString = "Database=Test;Data Source=localhost;User QuestionID=username;Password=pass";
           }
           MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-          string myInsertQuery = "INSERT INTO Orders (id, customerId, amount) Values(1001, 23, 30.66)";
+          string myInsertQuery = "INSERT INTO Orders (questionId, customerQuestionID, amount) Values(1001, 23, 30.66)";
           MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
           myCommand.Connection = myConnection;
           myConnection.Open();
@@ -729,7 +729,7 @@
     </summary>
     <exception cref="System.ArgumentException">The value set is less than 0.</exception>
     <remarks>
-      A value of 0 indicates no limit, and should be avoided in a
+      A value of 0 indicates no limit, and should be avoquestionIded in a
       <see cref="MySqlConnection.ConnectionString"/> because an attempt to connect
       will wait indefinitely.
     </remarks>
@@ -744,7 +744,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateSqlConnection()
+        public voquestionId CreateSqlConnection()
         {
         MySqlConnection myConnection = new MySqlConnection();
         myConnection.ConnectionString = "Persist Security Info=False;Username=user;Password=pass;database=test1;server=localhost;Connect Timeout=30";
@@ -769,7 +769,7 @@
         You can use the <B>ConnectionString</B> property to connect to a database.
         The following example illustrates a typical connection string.
       </para>
-      <c>"Persist Security Info=False;database=MyDB;server=MySqlServer;user id=myUser;Password=myPass"</c>
+      <c>"Persist Security Info=False;database=MyDB;server=MySqlServer;user questionId=myUser;Password=myPass"</c>
       <para>
         The <B>ConnectionString</B> property can be set only when the connection is
         closed. Many of the connection string values have corresponding read-only
@@ -786,7 +786,7 @@
         Resetting the <B>ConnectionString</B> on a closed connection resets all
         connection string values (and related properties) including the password. For
         example, if you set a connection string that includes "Database= MyDb", and
-        then reset the connection string to "Data Source=myserver;User Id=myUser;Password=myPass",
+        then reset the connection string to "Data Source=myserver;User QuestionID=myUser;Password=myPass",
         the <see cref="MySqlConnection.Database"/> property is no longer set to MyDb.
       </para>
       <para>
@@ -830,16 +830,16 @@
       </para>
       <para>Keywords are not case sensitive.</para>
       <para>
-        The following table lists the valid names for keyword values within the
+        The following table lists the valquestionId names for keyword values within the
         <B>ConnectionString</B>.
       </para>
 
       <div class="tablediv">
         <table class="dtTABLE" cellspacing="0">
           <tr valign="top">
-            <th width="33%">Name</th>
-            <th width="33%">Default</th>
-            <th width="33%">Description</th>
+            <th wquestionIdth="33%">Name</th>
+            <th wquestionIdth="33%">Default</th>
+            <th wquestionIdth="33%">Description</th>
           </tr>
           <tr>
             <td>
@@ -862,7 +862,7 @@
               <para>
                 The name or network address of the instance of MySQL to which to connect.  Multiple hosts can be
                 specified separated by &amp;.  This can be useful where multiple MySQL servers are configured for replication
-                and you are not concerned about the precise server you are connecting to.  No attempt is made by the provider to
+                and you are not concerned about the precise server you are connecting to.  No attempt is made by the provquestionIder to
                 synchronize writes to the database so care should be taken when using this option.
               </para>
               <para>
@@ -951,7 +951,7 @@
           </tr>
           <tr>
             <td>
-              User Id<para>  -or-  </para>Username<para>  -or-  </para>Uid<para>  -or-  </para>User name
+              User QuestionID<para>  -or-  </para>Username<para>  -or-  </para>UquestionId<para>  -or-  </para>User name
             </td>
             <td></td>
             <td>The MySQL login account being used.</td>
@@ -1011,7 +1011,7 @@
             </td>
             <td>true</td>
             <td>
-              Instructs the provider to ignore any attempts to prepare commands.  This option
+              Instructs the provquestionIder to ignore any attempts to prepare commands.  This option
               was added to allow a user to disable prepared statements in an entire application
               without modifying the code.  A user might want to do this if errors or bugs are
               encountered with MySQL prepared statements.
@@ -1021,7 +1021,7 @@
             <td>Use Procedure Bodies</td>
             <td>true</td>
             <td>
-              Instructs the provider to attempt to call the procedure without first resolving the metadata.  This
+              Instructs the provquestionIder to attempt to call the procedure without first resolving the metadata.  This
               is useful in situations where the calling user does not have access to the mysql.proc table.  To
               use this mode, the parameters for the procedure must be added to the command in the same order
               as they appear in the procedure definition and their types must be explicitly set.
@@ -1069,14 +1069,14 @@
             <td>Allow User Variables</td>
             <td>false</td>
             <td>
-              Should the provider expect user variables in the SQL.
+              Should the provquestionIder expect user variables in the SQL.
             </td>
           </tr>
           <tr>
             <td>Interactive -or- Interactive Session</td>
             <td>false</td>
             <td>
-              Should this session be considered interactive?
+              Should this session be consquestionIdered interactive?
             </td>
           </tr>
           <tr>
@@ -1098,16 +1098,16 @@
         </table>
       </div>
       <para>
-        The following table lists the valid names for connection pooling values within
+        The following table lists the valquestionId names for connection pooling values within
         the <B>ConnectionString</B>. For more information about connection pooling, see
-        Connection Pooling for the MySql Data Provider.
+        Connection Pooling for the MySql Data ProvquestionIder.
       </para>
       <div class="tablediv">
         <table class="dtTABLE" cellspacing="0">
           <tr valign="top">
-            <th width="33%">Name</th>
-            <th width="33%">Default</th>
-            <th width="33%">Description</th>
+            <th wquestionIdth="33%">Name</th>
+            <th wquestionIdth="33%">Default</th>
+            <th wquestionIdth="33%">Description</th>
           </tr>
           <tr>
             <td>Connection Lifetime</td>
@@ -1149,7 +1149,7 @@
             <td>
               Specifies whether the database connection should be reset when being
               drawn from the pool.  Leaving this as <b>false</b> will yeild much faster
-              connection opens but the user should understand the side effects
+              connection opens but the user should understand the squestionIde effects
               of doing this such as temporary tables and user variables from the previous
               session not being cleared out.
             </td>
@@ -1170,7 +1170,7 @@
         value, you can use 'yes' instead of 'true', and 'no' instead of 'false'.
       </para>
       <para>
-        <B>Note</B>  The MySql Data Provider uses the native socket protocol to
+        <B>Note</B>  The MySql Data ProvquestionIder uses the native socket protocol to
         communicate with MySQL.  Therefore, it does not support the use of an ODBC data source name (DSN) when
         connecting to MySQL because it does not add an ODBC layer.
       </para>
@@ -1179,7 +1179,7 @@
         connection string based on user input (for example when retrieving user ID and password information from a
         dialog box, and appending it to the connection string). The application should
         ensure that a user cannot embed extra connection string parameters in these
-        values (for example, entering a password as "validpassword;database=somedb" in
+        values (for example, entering a password as "valquestionIdpassword;database=somedb" in
         an attempt to attach to a different database).
       </para>
     </remarks>
@@ -1188,15 +1188,15 @@
       <code lang="vbnet">
         Public Sub CreateConnection()
         Dim myConnection As New MySqlConnection()
-        myConnection.ConnectionString = "Persist Security Info=False;database=myDB;server=myHost;Connect Timeout=30;user id=myUser; pwd=myPass"
+        myConnection.ConnectionString = "Persist Security Info=False;database=myDB;server=myHost;Connect Timeout=30;user questionId=myUser; pwd=myPass"
         myConnection.Open()
         End Sub 'CreateConnection
       </code>
       <code lang="C#">
-        public void CreateConnection()
+        public voquestionId CreateConnection()
         {
         MySqlConnection myConnection = new MySqlConnection();
-        myConnection.ConnectionString = "Persist Security Info=False;database=myDB;server=myHost;Connect Timeout=30;user id=myUser; pwd=myPass";
+        myConnection.ConnectionString = "Persist Security Info=False;database=myDB;server=myHost;Connect Timeout=30;user questionId=myUser; pwd=myPass";
         myConnection.Open();
         }
       </code>
@@ -1206,15 +1206,15 @@
       <code lang="vbnet">
         Public Sub CreateConnection()
         Dim myConnection As New MySqlConnection()
-        myConnection.ConnectionString = "database=myDB;server=/var/lib/mysql/mysql.sock;user id=myUser; pwd=myPass"
+        myConnection.ConnectionString = "database=myDB;server=/var/lib/mysql/mysql.sock;user questionId=myUser; pwd=myPass"
         myConnection.Open()
         End Sub 'CreateConnection
       </code>
       <code lang="C#">
-        public void CreateConnection()
+        public voquestionId CreateConnection()
         {
         MySqlConnection myConnection = new MySqlConnection();
-        myConnection.ConnectionString = "database=myDB;server=/var/lib/mysql/mysql.sock;user id=myUser; pwd=myPass";
+        myConnection.ConnectionString = "database=myDB;server=/var/lib/mysql/mysql.sock;user questionId=myUser; pwd=myPass";
         myConnection.Open();
         }
       </code>

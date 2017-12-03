@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="NLog" targetNamespace="http://www.nlog-project.org/schemas/NLog.xsd" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.nlog-project.org/schemas/NLog.xsd">
+<xs:schema questionId="NLog" targetNamespace="http://www.nlog-project.org/schemas/NLog.xsd" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.nlog-project.org/schemas/NLog.xsd">
   <xs:element name="nlog" type="NLogConfiguration" />
   <xs:complexType name="NLogConfiguration">
     <xs:choice minOccurs="0" maxOccurs="unbounded">
@@ -361,7 +361,7 @@
           <xs:element name="name" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="bufferSize" minOccurs="0" maxOccurs="1" type="xs:integer" />
           <xs:element name="flushTimeout" minOccurs="0" maxOccurs="1" type="xs:integer" />
-          <xs:element name="slidingTimeout" minOccurs="0" maxOccurs="1" type="xs:boolean" />
+          <xs:element name="slquestionIdingTimeout" minOccurs="0" maxOccurs="1" type="xs:boolean" />
           <xs:element name="optimizeBufferReuse" minOccurs="0" maxOccurs="1" type="xs:boolean" />
         </xs:choice>
         <xs:attribute name="name" type="xs:string">
@@ -379,9 +379,9 @@
             <xs:documentation>Timeout (in milliseconds) after which the contents of buffer will be flushed if there's no write in the specified period of time. Use -1 to disable timed flushes.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="slidingTimeout" type="xs:boolean">
+        <xs:attribute name="slquestionIdingTimeout" type="xs:boolean">
           <xs:annotation>
-            <xs:documentation>Indicates whether to use sliding timeout.</xs:documentation>
+            <xs:documentation>Indicates whether to use slquestionIding timeout.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="optimizeBufferReuse" type="xs:boolean">
@@ -779,7 +779,7 @@
           <xs:element name="name" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="useTransactions" minOccurs="0" maxOccurs="1" type="xs:boolean" />
           <xs:element name="dbUserName" minOccurs="0" maxOccurs="1" type="Layout" />
-          <xs:element name="dbProvider" minOccurs="0" maxOccurs="1" type="xs:string" />
+          <xs:element name="dbProvquestionIder" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="dbPassword" minOccurs="0" maxOccurs="1" type="Layout" />
           <xs:element name="keepConnection" minOccurs="0" maxOccurs="1" type="xs:boolean" />
           <xs:element name="dbDatabase" minOccurs="0" maxOccurs="1" type="Layout" />
@@ -801,22 +801,22 @@
         </xs:attribute>
         <xs:attribute name="useTransactions" type="xs:boolean">
           <xs:annotation>
-            <xs:documentation>Obsolete - value will be ignored! The logging code always runs outside of transaction. Gets or sets a value indicating whether to use database transactions. Some data providers require this.</xs:documentation>
+            <xs:documentation>Obsolete - value will be ignored! The logging code always runs outsquestionIde of transaction. Gets or sets a value indicating whether to use database transactions. Some data provquestionIders require this.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="dbUserName" type="SimpleLayoutAttribute">
           <xs:annotation>
-            <xs:documentation>Database user name. If the ConnectionString is not provided this value will be used to construct the "User ID=" part of the connection string.</xs:documentation>
+            <xs:documentation>Database user name. If the ConnectionString is not provquestionIded this value will be used to construct the "User ID=" part of the connection string.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="dbProvider" type="xs:string">
+        <xs:attribute name="dbProvquestionIder" type="xs:string">
           <xs:annotation>
-            <xs:documentation>Name of the database provider.</xs:documentation>
+            <xs:documentation>Name of the database provquestionIder.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="dbPassword" type="SimpleLayoutAttribute">
           <xs:annotation>
-            <xs:documentation>Database password. If the ConnectionString is not provided this value will be used to construct the "Password=" part of the connection string.</xs:documentation>
+            <xs:documentation>Database password. If the ConnectionString is not provquestionIded this value will be used to construct the "Password=" part of the connection string.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="keepConnection" type="xs:boolean">
@@ -826,7 +826,7 @@
         </xs:attribute>
         <xs:attribute name="dbDatabase" type="SimpleLayoutAttribute">
           <xs:annotation>
-            <xs:documentation>Database name. If the ConnectionString is not provided this value will be used to construct the "Database=" part of the connection string.</xs:documentation>
+            <xs:documentation>Database name. If the ConnectionString is not provquestionIded this value will be used to construct the "Database=" part of the connection string.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="connectionStringName" type="xs:string">
@@ -836,17 +836,17 @@
         </xs:attribute>
         <xs:attribute name="connectionString" type="SimpleLayoutAttribute">
           <xs:annotation>
-            <xs:documentation>Connection string. When provided, it overrides the values specified in DBHost, DBUserName, DBPassword, DBDatabase.</xs:documentation>
+            <xs:documentation>Connection string. When provquestionIded, it overrquestionIdes the values specified in DBHost, DBUserName, DBPassword, DBDatabase.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="dbHost" type="SimpleLayoutAttribute">
           <xs:annotation>
-            <xs:documentation>Database host name. If the ConnectionString is not provided this value will be used to construct the "Server=" part of the connection string.</xs:documentation>
+            <xs:documentation>Database host name. If the ConnectionString is not provquestionIded this value will be used to construct the "Server=" part of the connection string.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="installConnectionString" type="SimpleLayoutAttribute">
           <xs:annotation>
-            <xs:documentation>Connection string using for installation and uninstallation. If not provided, regular ConnectionString is being used.</xs:documentation>
+            <xs:documentation>Connection string using for installation and uninstallation. If not provquestionIded, regular ConnectionString is being used.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="optimizeBufferReuse" type="xs:boolean">
@@ -889,7 +889,7 @@
     </xs:attribute>
     <xs:attribute name="connectionString" type="SimpleLayoutAttribute">
       <xs:annotation>
-        <xs:documentation>Connection string to run the command against. If not provided, connection string from the target is used.</xs:documentation>
+        <xs:documentation>Connection string to run the command against. If not provquestionIded, connection string from the target is used.</xs:documentation>
       </xs:annotation>
     </xs:attribute>
     <xs:attribute name="ignoreFailures" type="xs:boolean">
@@ -1008,7 +1008,7 @@
           <xs:element name="name" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="layout" minOccurs="0" maxOccurs="1" type="Layout" />
           <xs:element name="category" minOccurs="0" maxOccurs="1" type="Layout" />
-          <xs:element name="eventId" minOccurs="0" maxOccurs="1" type="Layout" />
+          <xs:element name="eventQuestionID" minOccurs="0" maxOccurs="1" type="Layout" />
           <xs:element name="log" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="machineName" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="source" minOccurs="0" maxOccurs="1" type="Layout" />
@@ -1033,7 +1033,7 @@
             <xs:documentation>Layout that renders event Category.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="eventId" type="SimpleLayoutAttribute">
+        <xs:attribute name="eventQuestionID" type="SimpleLayoutAttribute">
           <xs:annotation>
             <xs:documentation>Layout that renders event ID.</xs:documentation>
           </xs:annotation>
@@ -1229,7 +1229,7 @@
         </xs:attribute>
         <xs:attribute name="cleanupFileName" type="xs:boolean">
           <xs:annotation>
-            <xs:documentation>Cleanup invalid values in a filename, e.g. slashes in a filename. If set to true, this can impact the performance of massive writes. If set to false, nothing gets written when the filename is wrong.</xs:documentation>
+            <xs:documentation>Cleanup invalquestionId values in a filename, e.g. slashes in a filename. If set to true, this can impact the performance of massive writes. If set to false, nothing gets written when the filename is wrong.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="discardAll" type="xs:boolean">
@@ -1371,7 +1371,7 @@
       <xs:enumeration value="Tuesday" />
       <xs:enumeration value="Wednesday" />
       <xs:enumeration value="Thursday" />
-      <xs:enumeration value="Friday" />
+      <xs:enumeration value="FrquestionIday" />
       <xs:enumeration value="Saturday" />
     </xs:restriction>
   </xs:simpleType>
@@ -1385,7 +1385,7 @@
   <xs:simpleType name="NLog.Targets.Win32FileAttributes">
     <xs:restriction base="xs:string">
       <xs:enumeration value="ReadOnly" />
-      <xs:enumeration value="Hidden" />
+      <xs:enumeration value="HquestionIdden" />
       <xs:enumeration value="System" />
       <xs:enumeration value="Archive" />
       <xs:enumeration value="Device" />
@@ -1435,7 +1435,7 @@
           <xs:element name="name" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="domain" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="impersonationLevel" minOccurs="0" maxOccurs="1" type="NLog.Targets.Wrappers.SecurityImpersonationLevel" />
-          <xs:element name="logOnProvider" minOccurs="0" maxOccurs="1" type="NLog.Targets.Wrappers.LogOnProviderType" />
+          <xs:element name="logOnProvquestionIder" minOccurs="0" maxOccurs="1" type="NLog.Targets.Wrappers.LogOnProvquestionIderType" />
           <xs:element name="logOnType" minOccurs="0" maxOccurs="1" type="NLog.Targets.Wrappers.SecurityLogOnType" />
           <xs:element name="password" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="revertToSelf" minOccurs="0" maxOccurs="1" type="xs:boolean" />
@@ -1457,9 +1457,9 @@
             <xs:documentation>Required impersonation level.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="logOnProvider" type="NLog.Targets.Wrappers.LogOnProviderType">
+        <xs:attribute name="logOnProvquestionIder" type="NLog.Targets.Wrappers.LogOnProvquestionIderType">
           <xs:annotation>
-            <xs:documentation>Type of the logon provider.</xs:documentation>
+            <xs:documentation>Type of the logon provquestionIder.</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="logOnType" type="NLog.Targets.Wrappers.SecurityLogOnType">
@@ -1493,12 +1493,12 @@
   <xs:simpleType name="NLog.Targets.Wrappers.SecurityImpersonationLevel">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Anonymous" />
-      <xs:enumeration value="Identification" />
+      <xs:enumeration value="QuestionIDentification" />
       <xs:enumeration value="Impersonation" />
       <xs:enumeration value="Delegation" />
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="NLog.Targets.Wrappers.LogOnProviderType">
+  <xs:simpleType name="NLog.Targets.Wrappers.LogOnProvquestionIderType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Default" />
     </xs:restriction>
@@ -1553,7 +1553,7 @@
           <xs:element name="endpointAddress" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="endpointConfigurationName" minOccurs="0" maxOccurs="1" type="xs:string" />
           <xs:element name="useOneWayContract" minOccurs="0" maxOccurs="1" type="xs:boolean" />
-          <xs:element name="clientId" minOccurs="0" maxOccurs="1" type="Layout" />
+          <xs:element name="clientQuestionID" minOccurs="0" maxOccurs="1" type="Layout" />
           <xs:element name="includeEventProperties" minOccurs="0" maxOccurs="1" type="xs:boolean" />
           <xs:element name="parameter" minOccurs="0" maxOccurs="unbounded" type="NLog.Targets.MethodCallParameter" />
           <xs:element name="useBinaryEncoding" minOccurs="0" maxOccurs="1" type="xs:boolean" />
@@ -1579,7 +1579,7 @@
             <xs:documentation>Indicates whether to use a WCF service contract that is one way (fire and forget) or two way (request-reply)</xs:documentation>
           </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="clientId" type="SimpleLayoutAttribute">
+        <xs:attribute name="clientQuestionID" type="SimpleLayoutAttribute">
           <xs:annotation>
             <xs:documentation>Client ID.</xs:documentation>
           </xs:annotation>
@@ -2554,7 +2554,7 @@
         </xs:attribute>
         <xs:attribute name="escapeDataRfc3986" type="xs:boolean">
           <xs:annotation>
-            <xs:documentation>Value whether escaping be done according to Rfc3986 (Supports Internationalized Resource Identifiers - IRIs)</xs:documentation>
+            <xs:documentation>Value whether escaping be done according to Rfc3986 (Supports Internationalized Resource QuestionIDentifiers - IRIs)</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="methodName" type="xs:string">
@@ -2648,7 +2648,7 @@
         </xs:attribute>
         <xs:attribute name="customColumnDelimiter" type="xs:string">
           <xs:annotation>
-            <xs:documentation>Custom column delimiter value (valid when ColumnDelimiter is set to 'Custom').</xs:documentation>
+            <xs:documentation>Custom column delimiter value (valquestionId when ColumnDelimiter is set to 'Custom').</xs:documentation>
           </xs:annotation>
         </xs:attribute>
         <xs:attribute name="delimiter" type="NLog.Layouts.CsvColumnDelimiterMode">

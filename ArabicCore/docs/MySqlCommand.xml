@@ -59,10 +59,10 @@
         Public Sub InsertRow(myConnectionString As String)
         &quot; If the connection string is null, use a default.
         If myConnectionString = "" Then
-        myConnectionString = "Database=Test;Data Source=localhost;User Id=username;Password=pass"
+        myConnectionString = "Database=Test;Data Source=localhost;User QuestionID=username;Password=pass"
         End If
         Dim myConnection As New MySqlConnection(myConnectionString)
-        Dim myInsertQuery As String = "INSERT INTO Orders (id, customerId, amount) Values(1001, 23, 30.66)"
+        Dim myInsertQuery As String = "INSERT INTO Orders (questionId, customerQuestionID, amount) Values(1001, 23, 30.66)"
         Dim myCommand As New MySqlCommand(myInsertQuery)
         myCommand.Connection = myConnection
         myConnection.Open()
@@ -71,15 +71,15 @@
         End Sub
       </code>
       <code lang="C#">
-        public void InsertRow(string myConnectionString)
+        public voquestionId InsertRow(string myConnectionString)
         {
         // If the connection string is null, use a default.
         if(myConnectionString == "")
         {
-        myConnectionString = "Database=Test;Data Source=localhost;User Id=username;Password=pass";
+        myConnectionString = "Database=Test;Data Source=localhost;User QuestionID=username;Password=pass";
         }
         MySqlConnection myConnection = new MySqlConnection(myConnectionString);
-        string myInsertQuery = "INSERT INTO Orders (id, customerId, amount) Values(1001, 23, 30.66)";
+        string myInsertQuery = "INSERT INTO Orders (questionId, customerQuestionID, amount) Values(1001, 23, 30.66)";
         MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
         myCommand.Connection = myConnection;
         myConnection.Open();
@@ -103,7 +103,7 @@
         <note>
           This example shows how to use one of the overloaded
           versions of the MySqlCommand constructor. For other examples that might be available,
-          see the individual overload topics.
+          see the indivquestionIdual overload topics.
         </note>
 
         <code lang="vbnet">
@@ -118,7 +118,7 @@
           End Sub
         </code>
         <code lang="C#">
-          public void CreateMySqlCommand()
+          public voquestionId CreateMySqlCommand()
           {
           MySqlConnection myConnection = new MySqlConnection("Persist Security Info=False;
           database=test;server=myServer");
@@ -131,7 +131,7 @@
         </code>
         <code lang="C++">
           public:
-          void CreateMySqlCommand()
+          voquestionId CreateMySqlCommand()
           {
           MySqlConnection* myConnection = new MySqlConnection(S"Persist Security Info=False;
           database=test;server=myServer");
@@ -198,7 +198,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand()
+        public voquestionId CreateMySqlCommand()
         {
         MySqlCommand myCommand = new MySqlCommand();
         myCommand.CommandType = CommandType.Text;
@@ -265,7 +265,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand()
+        public voquestionId CreateMySqlCommand()
         {
         string sql = "SELECT * FROM mytable";
         MySqlCommand myCommand = new MySqlCommand(sql);
@@ -341,7 +341,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand()
+        public voquestionId CreateMySqlCommand()
         {
         MySqlConnection conn = new MySqlConnection("server=myserver")
         string sql = "SELECT * FROM mytable";
@@ -427,7 +427,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand()
+        public voquestionId CreateMySqlCommand()
         {
         MySqlConnection conn = new MySqlConnection("server=myserver")
         conn.Open();
@@ -472,7 +472,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand(string myExecuteQuery, MySqlConnection myConnection)
+        public voquestionId CreateMySqlCommand(string myExecuteQuery, MySqlConnection myConnection)
         {
         MySqlCommand myCommand = new MySqlCommand(myExecuteQuery, myConnection);
         myCommand.Connection.Open();
@@ -518,7 +518,7 @@
         clause in your SQL will cause all rows (up to the limit given) to be retrieved by the client.  The
         <see cref="MySqlDataReader.Read"/> method will still return false after the first row but pulling all rows of data
         into the client will have a performance impact.  If the <i>limit</i> clause is not necessary, it should
-        be avoided.
+        be avoquestionIded.
       </note>
     </remarks>
     <returns>
@@ -571,7 +571,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlDataReader(string mySelectQuery, MySqlConnection myConnection)
+        public voquestionId CreateMySqlDataReader(string mySelectQuery, MySqlConnection myConnection)
         {
         MySqlCommand myCommand = new MySqlCommand(mySelectQuery, myConnection);
         myConnection.Open();
@@ -620,7 +620,7 @@
         end sub
       </code>
       <code lang="C#">
-        private void PrepareExample()
+        private voquestionId PrepareExample()
         {
         MySqlCommand cmd = new MySqlCommand("INSERT INTO mytable VALUES (@val)", myConnection);
         cmd.Parameters.Add( "@val", 10 );
@@ -666,7 +666,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand(string myScalarQuery, MySqlConnection myConnection)
+        public voquestionId CreateMySqlCommand(string myScalarQuery, MySqlConnection myConnection)
         {
         MySqlCommand myCommand = new MySqlCommand(myScalarQuery, myConnection);
         myCommand.Connection.Open();
@@ -676,7 +676,7 @@
       </code>
       <code lang="C++">
         public:
-        void CreateMySqlCommand(String* myScalarQuery, MySqlConnection* myConnection)
+        voquestionId CreateMySqlCommand(String* myScalarQuery, MySqlConnection* myConnection)
         {
         MySqlCommand* myCommand = new MySqlCommand(myScalarQuery, myConnection);
         myCommand-&gt;Connection-&gt;Open();
@@ -703,7 +703,7 @@
         contains any special characters. The command executes this stored procedure when
         you call one of the Execute methods.  Starting with Connector/Net 5.0, having both a stored function
         and stored procedure with the same name in the same database is not supported.  It is
-        suggested that you provide unqiue names for your stored routines.
+        suggested that you provquestionIde unqiue names for your stored routines.
       </para>
     </remarks>
     <example>
@@ -711,15 +711,15 @@
       <code lang="vbnet">
         Public Sub CreateMySqlCommand()
         Dim myCommand As New MySqlCommand()
-        myCommand.CommandText = "SELECT * FROM Mytable ORDER BY id"
+        myCommand.CommandText = "SELECT * FROM Mytable ORDER BY questionId"
         myCommand.CommandType = CommandType.Text
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand()
+        public voquestionId CreateMySqlCommand()
         {
         MySqlCommand myCommand = new MySqlCommand();
-        myCommand.CommandText = "SELECT * FROM mytable ORDER BY id";
+        myCommand.CommandText = "SELECT * FROM mytable ORDER BY questionId";
         myCommand.CommandType = CommandType.Text;
         }
       </code>
@@ -766,7 +766,7 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand()
+        public voquestionId CreateMySqlCommand()
         {
         MySqlCommand myCommand = new MySqlCommand();
         myCommand.CommandType = CommandType.Text;
@@ -791,7 +791,7 @@
     <remarks>
       <para>
         If you set <B>Connection</B> while a transaction is in progress and the
-        <see cref="Transaction"/> property is not null, an <see cref="InvalidOperationException"/>
+        <see cref="Transaction"/> property is not null, an <see cref="InvalquestionIdOperationException"/>
         is generated. If the <B>Transaction</B> property is not null and the transaction
         has already been committed or rolled back, <B>Transaction</B> is set to
         null.
@@ -801,7 +801,7 @@
       The following example creates a <see cref="MySqlCommand"/> and sets some of its properties.
       <code lang="vbnet">
         Public Sub CreateMySqlCommand()
-        Dim mySelectQuery As String = "SELECT * FROM mytable ORDER BY id"
+        Dim mySelectQuery As String = "SELECT * FROM mytable ORDER BY questionId"
         Dim myConnectString As String = "Persist Security Info=False;database=test;server=myServer"
         Dim myCommand As New MySqlCommand(mySelectQuery)
         myCommand.Connection = New MySqlConnection(myConnectString)
@@ -809,9 +809,9 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand()
+        public voquestionId CreateMySqlCommand()
         {
-        string mySelectQuery = "SELECT * FROM mytable ORDER BY id";
+        string mySelectQuery = "SELECT * FROM mytable ORDER BY questionId";
         string myConnectString = "Persist Security Info=False;database=test;server=myServer";
         MySqlCommand myCommand = new MySqlCommand(mySelectQuery);
         myCommand.Connection = new MySqlConnection(myConnectString);
@@ -824,21 +824,21 @@
   <IsPrepared>
   </IsPrepared>
 
-  <LastInsertedId>
-    <summary>Provides the id of the last inserted row.</summary>
+  <LastInsertedQuestionID>
+    <summary>ProvquestionIdes the questionId of the last inserted row.</summary>
     <value>
-      Id of the last inserted row.  -1 if none exists.
+      QuestionID of the last inserted row.  -1 if none exists.
     </value>
     <remarks>
       An important point to remember is that this property can be used
       in batch SQL scenarios but it's important to remember that it will
-      only reflect the insert id from the last insert statement in the batch.
+      only reflect the insert questionId from the last insert statement in the batch.
 
       This property can also be used when the batch includes select statements
       and ExecuteReader is used.  This property can be consulted during result set
       processing.
     </remarks>
-  </LastInsertedId>
+  </LastInsertedQuestionID>
 
   <Parameters>
     <summary>
@@ -860,7 +860,7 @@
         Public Sub CreateMySqlCommand(myConnection As MySqlConnection, _
         mySelectQuery As String, myParamArray() As MySqlParameter)
         Dim myCommand As New MySqlCommand(mySelectQuery, myConnection)
-        myCommand.CommandText = "SELECT id, name FROM mytable WHERE age=@age"
+        myCommand.CommandText = "SELECT questionId, name FROM mytable WHERE age=@age"
         myCommand.UpdatedRowSource = UpdateRowSource.Both
         myCommand.Parameters.Add(myParamArray)
         Dim j As Integer
@@ -876,11 +876,11 @@
         End Sub
       </code>
       <code lang="C#">
-        public void CreateMySqlCommand(MySqlConnection myConnection, string mySelectQuery,
+        public voquestionId CreateMySqlCommand(MySqlConnection myConnection, string mySelectQuery,
         MySqlParameter[] myParamArray)
         {
         MySqlCommand myCommand = new MySqlCommand(mySelectQuery, myConnection);
-        myCommand.CommandText = "SELECT id, name FROM mytable WHERE age=@age";
+        myCommand.CommandText = "SELECT questionId, name FROM mytable WHERE age=@age";
         myCommand.Parameters.Add(myParamArray);
         for (int j=0; j&lt;myParamArray.Length; j++)
         {
